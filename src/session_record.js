@@ -270,7 +270,8 @@ class SessionRecord {
             console.warn("Session already closed", session);
             return;
         }
-        console.info("Closing session:", session);
+        // console.info("Closing session:", session);
+        console.info("Closing session:", session?.registrationId);
         session.indexInfo.closed = Date.now();
     }
 
