@@ -271,7 +271,6 @@ class SessionRecord {
             return;
         }
         // console.info("Closing session:", session);
-        console.info("Closing session:", session?.registrationId);
         session.indexInfo.closed = Date.now();
     }
 
